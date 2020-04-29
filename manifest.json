@@ -1,0 +1,25 @@
+{
+
+    "manifest_version": 2,
+    "name": "Reddit-Code-Block",
+    "version": "1.0",
+  
+    "description": "Allows for easier code block writing on old reddit.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://old.reddit.com/*"],
+        "js": ["reddit-code-block.js"]
+      }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "jwlodek.dev@gmail.com"
+        }
+      }
+  
+  }
